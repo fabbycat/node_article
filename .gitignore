@@ -63,3 +63,6 @@
 /drush
 /drupal.phar
 /drupal
+
+# Ignore node_modules and other package managers
+/node_modules

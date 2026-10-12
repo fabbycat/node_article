@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_global_textarea
+    - node.type.node_bundle_article
+  module:
+    - field
+    - node
+    - text
+id: node.node_bundle_article.field_global_textarea
+field_name: field_global_textarea
+entity_type: node
+bundle: node_bundle_article
+label: Content
+description: ''
+required: true
+translatable: false
+default_value: {}
+default_value_callback: ''
+settings:
+  allowed_formats: {}
+field_type: text_with_summary

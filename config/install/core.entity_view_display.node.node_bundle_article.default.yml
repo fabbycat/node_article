@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.node_bundle_article.field_global_textarea
+    - node.type.node_bundle_article
+  module:
+    - text
+    - user
+id: node.node_bundle_article.default
+targetEntityType: node
+bundle: node_bundle_article
+mode: default
+content:
+  field_global_textarea:
+    type: text_default
+    label: hidden
+    settings: {}
+    third_party_settings: {}
+    weight: 1
+    region: content
+links:
+  settings: {}
+  third_party_settings: {}
+  weight: 100
+  region: content
+hidden: 
+  langcode: true

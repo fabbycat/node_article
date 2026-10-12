@@ -1,0 +1,6 @@
+<?php
+
+/**
+ * @file
+ * An article content type (node) that provides a textarea and title.
+ */

@@ -1,0 +1,25 @@
+name: 'Node Article'
+machine_name: 'node_article'
+description: 'An article content type (node) that provides a textarea and title.'
+# lifecycle:
+# lifecycle_link:
+# project status url:
+package: Site structure
+type: module
+core_version_requirement: ^11
+php: 8.3
+dependencies:
+  - drupal:field
+  - drupal:filter
+  - drupal:node
+  - drupal:path
+  - drupal:system
+  - drupal:text
+  - drupal:user
+  - drupal:views
+  - fields_node_global:fields_node_global
+# test_dependencies:
+# configure:
+# configure_parameters:
+# hidden:
+# required:

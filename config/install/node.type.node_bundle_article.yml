@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - fields_node_global
+type: node_bundle_article
+name: 'Article'
+module: node_article
+description: 'An article with a title, content fields with summary and a thumbnail image.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true
+ 

@@ -1,0 +1,99 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.node_bundle_article.field_global_textarea
+    - node.type.node_bundle_article
+  module:
+    - path
+    - text
+id: node.node_bundle_article.default
+targetEntityType: node
+bundle: node_bundle_article
+mode: default
+content:
+  # USER: Title Field
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {}
+
+  # USER: Main Content
+  field_global_textarea:
+    type: text_textarea
+    weight: 5
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {}
+
+  # ADMIN: Locale
+  langcode:
+    type: language_select
+    weight: 10
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {}
+
+  # ADMIN: User Name
+  uid:
+    type: entity_reference_autocomplete
+    weight: 20
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {}
+
+  # ADMIN: Date Created
+  created:
+    type: datetime_timestamp
+    weight: 30
+    region: content
+    settings: {}
+    third_party_settings: {}
+
+  # ADMIN: Published
+  status:
+    type: boolean_checkbox
+    weight: 40
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {}
+
+  # ADMIN: URL Alias
+  path:
+    type: path
+    weight: 50
+    region: content
+    settings: {}
+    third_party_settings: {}
+
+  # ADMIN: Show on Front Page
+  promote:
+    type: boolean_checkbox
+    weight: 60
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {}
+
+  # ADMIN: Show at Top of Lists
+  sticky:
+    type: boolean_checkbox
+    weight: 70
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {}
+
+hidden: {}

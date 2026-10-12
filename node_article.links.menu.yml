@@ -1,0 +1,20 @@
+# Add page
+content_article.add_node_article:
+  title: 'Add a new article'
+  description: 'Creates a new article.'
+  route_name: node.add
+  route_parameters:
+    node_type: 'node_article'
+  parent: system.admin_content
+  weight: 10
+
+# Manage pages
+content_article.manage_node_article:
+  title: 'Manage articles'
+  description: 'Manage, view and filter all existing articles.'
+  route_name: view.content.page_1
+  options:
+    query:
+      type: 'node_article'
+  parent: system.admin_content
+  weight: 11

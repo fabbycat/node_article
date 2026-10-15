@@ -1,0 +1,10 @@
+{
+    "name": "drupal/node_article",
+    "description": "An article (node) with a title, content fields with summary and a thumbnail image.",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "php": ">=8.3",
+        "drupal/core": "^11.0 || ^12.0"
+    }
+}

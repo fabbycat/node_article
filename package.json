@@ -1,4 +1,6 @@
 {
+    "name": "drupal/node_article",
+    "description": "An article (node) with a title, content fields with summary and a thumbnail image.",
   "type": "module",
   "devDependencies": {
     "@commitlint/cli": "^21.2.3",
